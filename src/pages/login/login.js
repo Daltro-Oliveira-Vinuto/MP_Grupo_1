@@ -8,8 +8,8 @@ function Login () {
                     <span className={s["title"]}>Faça login</span>
                 </div>
                 <div className={s['inputs']}>
-                    <input className={s['text-input']} placeholder="Email"/>
-                    <input className={s['text-input']} placeholder="Password"/>
+                    <input type="email" className={s['text-input']} placeholder="Email"/>
+                    <input type="password" className={s['text-input']} placeholder="Password"/>
                     <button className={s['login-button']}>LOGIN</button>
                 </div>
             </div>

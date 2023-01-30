@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.login{
+.register{
     width: 100vw;
     height: 100vh;
     background: rgb(2,0,36);
@@ -54,7 +54,17 @@
     font-size: 1rem;
 }
 
-.login-button {
+.option {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    color: rgb(61, 61, 61);
+}
+
+.option input {
+    margin: 0.3rem
+}
+
+.register-button {
     background-color: rgb(17, 175, 17);
     border: 0;
     margin: 1rem;
