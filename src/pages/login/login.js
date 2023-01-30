@@ -3,7 +3,7 @@ import s from "./login.module.css"
 function Login () {
     return (
         <div className={s["login"]}>
-            <div className={s["container"]}>
+            <form className={s["container"]}>
                 <div className={s["title-container"]}>
                     <span className={s["title"]}>Faça login</span>
                 </div>
@@ -12,7 +12,7 @@ function Login () {
                     <input type="password" className={s['text-input']} placeholder="Password"/>
                     <button className={s['login-button']}>LOGIN</button>
                 </div>
-            </div>
+            </form>
         </div>
     )
 }

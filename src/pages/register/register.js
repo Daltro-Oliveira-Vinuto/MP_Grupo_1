@@ -3,7 +3,7 @@ import s from "./register.module.css"
 function Register () {
     return (
         <div className={s["register"]}>
-            <div className={s["container"]}>
+            <form className={s["container"]}>
                 <div className={s["title-container"]}>
                     <span className={s["title"]}>Cadastre-se</span>
                 </div>
@@ -23,7 +23,7 @@ function Register () {
                     </div>
                     <button className={s['register-button']}>CADASTRAR</button>
                 </div>
-            </div>
+            </form>
         </div>
     )
 }
