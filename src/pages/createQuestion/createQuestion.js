@@ -1,8 +1,10 @@
 import s from "./createQuestion.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function CreateQuestion() {
   const [selectedQuestionType, setSelectedQuestionType] = useState("numeric");
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
     setSelectedQuestionType(event.target.value);
@@ -88,7 +90,12 @@ function CreateQuestion() {
             </div>
           )}
 
-          <button className={s["create-question-button"]}>CRIAR QUESTÃO</button>
+          <button
+            className={s["create-question-button"]}
+            onClick={() => navigate("/profile")}
+          >
+            CRIAR
+          </button>
         </div>
       </form>
     </div>
